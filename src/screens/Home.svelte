@@ -210,6 +210,8 @@
 			</div> -->
 			<!-- Zed just told me the cl4 port will move the mod panel to a seperate site -->
 			<h1>Home</h1>
+			<b style="color: red;">This client is developed by jdev082 and is an unofficial client. Please report bugs to jdev082!</b>
+			<br>
 			There are currently {_ulist.length} user(s) online{#if _ulist.length}{" "}({_ulist.join(
 					", "
 				)}){/if}.

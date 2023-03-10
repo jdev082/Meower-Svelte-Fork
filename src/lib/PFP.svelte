@@ -47,10 +47,9 @@
 		box-sizing: border-box;
 
 		background-color: var(--pfp-bg);
-		border: solid 1.5px var(--pfp-outline);
-		border-bottom-width: 5px;
-		border-radius: calc(var(--size) * 1.25em);
+		border-radius: 100%;
 
+		padding: 0.75em;
 		display: flex;
 		align-items: center;
 		justify-content: center;

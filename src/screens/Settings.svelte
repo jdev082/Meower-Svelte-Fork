@@ -59,7 +59,7 @@
 			class="circle settings"
 			on:click={() => {
 				const _user = $user;
-				_user.theme = _user.theme === "orange" ? "blue" : "orange";
+				_user.theme = _user.theme === "default" ? "blue" ?? "orange": "default";
 				user.set(_user);
 
 				clm.updateProfile();

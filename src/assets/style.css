@@ -60,7 +60,7 @@ input[type="text"],
 input[type="password"],
 textarea {
 	border: solid 2px var(--foreground-orange);
-	border-radius: 1px;
+	border-radius: 10px;
 	outline: none;
 
 	background-color: var(--orange);

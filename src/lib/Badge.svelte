@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
 	export let text = "BADGE";
 	export let title = null;
 	export let checkmark = false;
