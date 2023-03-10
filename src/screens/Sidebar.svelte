@@ -163,12 +163,13 @@
 		height: 100%;
 	}
 	.sidebar > button {
-		width: 2.8em;
-		height: 2.8em;
+		width: 2.2em;
+		height: 2.2em;
 		min-width: 0;
 		min-height: 0;
 
-		margin: 0;
+		border-radius: 10px;
+		margin: 2pt;
 		flex-shrink: 1;
 
 		padding: 0.5em;

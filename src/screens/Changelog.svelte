@@ -14,6 +14,7 @@
 		<li>UI improvements and QOL</li>
 	</ul>
 </Container>
+<Container>
 	<h2>(Unofficial) 1.6.1</h2>
 	<ul>
 		<li>Permanent changes are now bolded and in red.</li>

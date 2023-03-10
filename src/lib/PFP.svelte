@@ -42,8 +42,8 @@
 		position: relative;
 	}
 	.pfp {
-		width: calc(var(--size) * 3.75em);
-		height: calc(var(--size) * 3.75em);
+		width: calc(var(--size) * 2.75);
+		height: calc(var(--size) * 2.75em);
 		box-sizing: border-box;
 
 		background-color: var(--pfp-bg);
