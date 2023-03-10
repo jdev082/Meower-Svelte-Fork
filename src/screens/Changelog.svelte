@@ -7,6 +7,13 @@
 	What's new?
 </Container>
 <Container>
+	<h2>Update 2</h2>
+	<ul>
+		<li>New theme + colorscheme</li>
+		<li>Bug fixes and improvements</li>
+		<li>UI improvements and QOL</li>
+	</ul>
+</Container>
 	<h2>(Unofficial) 1.6.1</h2>
 	<ul>
 		<li>Permanent changes are now bolded and in red.</li>
