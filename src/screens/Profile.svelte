@@ -10,6 +10,8 @@
 
 	import {profileCache} from "../lib/loadProfile.js";
 
+	import logout from "../assets/logout.svg";
+
 	import ProfileView from "../lib/ProfileView.svelte";
 
 	import PFP from "../lib/PFP.svelte";
@@ -120,6 +122,17 @@
 				</div>
 			</Container>
 		{:else if $profileClicked === $user.name}
+			<button
+				on:click={() => {
+					modalPage.set("logout");
+					modalShown.set(true);
+				}}
+				class="long"
+				style="right: 0;"
+			>
+				Log Out
+				<!--<img src={logout} alt="Log out" draggable={false} />-->
+			</button>
 			<button
 				class="long"
 				title="Change Profile Picture"

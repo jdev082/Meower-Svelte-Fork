@@ -60,7 +60,6 @@ input[type="text"],
 input[type="password"],
 textarea {
 	border: solid 2px var(--foreground-orange);
-	border-radius: 10px;
 	outline: none;
 
 	background-color: var(--orange);
@@ -104,7 +103,6 @@ input[type="password"]:not(.white):focus-visible {
 }
 
 button.round {
-	border-radius: 0.75em;
 	border-bottom-width: 5px;
 	padding: 0.5em;
 	overflow-wrap: break-word;
@@ -177,7 +175,6 @@ details > summary {
 button.circle,
 input[type="checkbox"] {
 	border: solid 2px var(--foreground-orange);
-	border-radius: 100%;
 	outline: none;
 
 	background-color: var(--orange);
@@ -269,7 +266,6 @@ a {
 
 hr {
     height: 2px;
-	border-radius: 2px;
     color: var(--orange);
     background-color: var(--orange);
     border: none;

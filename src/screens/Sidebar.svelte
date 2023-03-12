@@ -21,7 +21,6 @@
 	import mail from "../assets/mail.svg";
 	import profile from "../assets/profile.svg";
 	import settings from "../assets/settings.svg";
-	import logout from "../assets/logout.svg";
 	import search from "../assets/search.svg";
 	import changelog from "../assets/changelog.svg";
 
@@ -127,15 +126,6 @@
 	<button on:click={() => goto("settings")} class="settings-btn round">
 		<img src={settings} alt="Settings" draggable={false} />
 	</button>
-	<button
-		on:click={() => {
-			modalPage.set("logout");
-			modalShown.set(true);
-		}}
-		class="logout-btn round"
-	>
-		<img src={logout} alt="Log out" draggable={false} />
-	</button>
 </div>
 
 <style>
@@ -168,7 +158,6 @@
 		min-width: 0;
 		min-height: 0;
 
-		border-radius: 10px;
 		margin: 2pt;
 		flex-shrink: 1;
 
@@ -205,7 +194,6 @@
 
 		width: 0.5em;
 		height: 0.5em;
-		border-radius: 50%;
 
 		position: absolute;
 		right: 0.5em;

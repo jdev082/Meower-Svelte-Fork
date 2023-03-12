@@ -180,43 +180,16 @@
 </script>
 
 <div class="home">
-	<!-- cst: comments probably from blocs: -->
-	<!--
-		 How do i use webhooks
-
-		send a post request to webhooks.meower.org
-		with the json
-		json
-		"post":"some_post"
-
-
-		add a username peram to get use non guest mode
-	-->
 	{#await loadPage(1)}
 		<div class="fullcenter">
 			<Loading />
 		</div>
 	{:then}
 		<Container>
-			<!-- cst: comments probably from blocs: -->
-			<!-- <div class="settings-controls">
-				<button
-					class="circle settings"
-					on:click={()=>{
-						alert("10% finished Mod Panel (That is also unrestricted)")
-						page.set("Mod_Panel")
-					}}
-				>
-			</div> -->
-			<!-- Zed just told me the cl4 port will move the mod panel to a seperate site -->
-			<h1>Home</h1>
-			<!--<b style="color: red;">This client is developed by jdev082 and is an unofficial client. Please report bugs to jdev082!</b-->
-			<br>
 			There are currently {_ulist.length} user(s) online{#if _ulist.length}{" "}({_ulist.join(
 					", "
 				)}){/if}.
 		</Container>
-		<!-- I think we discussed that guest posting will not be in the official client, due to moderation reasons -->
 		{#if $user.name}
 			<form
 				class="createpost"

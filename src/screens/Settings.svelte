@@ -4,6 +4,7 @@
 
 	import {user, modalShown, modalPage} from "../lib/stores.js";
 	import * as clm from "../lib/clmanager.js";
+	import logout from "../assets/logout.svg";
 </script>
 
 <!--
@@ -59,7 +60,8 @@
 			class="circle settings"
 			on:click={() => {
 				const _user = $user;
-				_user.theme = _user.theme === "default" ? "blue" ?? "orange": "default";
+				_user.theme =
+					_user.theme === "default" ? "blue" ?? "orange" : "default";
 				user.set(_user);
 
 				clm.updateProfile();
@@ -153,7 +155,9 @@
 		</div>
 
 		<h2>Delete Account</h2>
-		Permanently delete your Meower account. <b style="color: red;">THIS CANNOT BE UNDONE!</b>.
+		Permanently delete your Meower account.<b style="color: red;"
+			>THIS CANNOT BE UNDONE!</b
+		>.
 	</Container>
 {/if}
 

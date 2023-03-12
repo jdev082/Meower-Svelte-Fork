@@ -198,10 +198,10 @@
 		</button>
 		<div class="creatordate">
 			<div class="creator">
-				<h2>
-					{post.user}
-				</h2>
-
+				<b>
+					{post.user} @ <FormattedDate date={post.date} />
+				</b>
+				<div style="display: flex; justify-content: space-between;">
 				{#if bridged}
 					<Badge
 						text="BRIDGED"
@@ -216,25 +216,17 @@
 					/>
 				{/if}
 
-				<!-- disabled until proper bot badges are added
-				{#if post.isvbot && !webhook}
+				{#if post.user == "MikeDEV"}
 					<Badge
-						text="BOT"
-						title="This bot has been verified"
-						checkmark={true}
+						text="Duck"
+						title="This person is a duck confirmed!"
 					/>
 				{/if}
-
-				{#if post.isuvbot && !webhook}
-					<Badge text="BOT" title="This bot has not been verified" />
-				{/if}
-				-->
 			</div>
-
-			<FormattedDate date={post.date} />
 		</div>
 	</div>
 	<p class="post-content">{post.content}</p>
+	</div>
 	<div class="post-images">
 		{#each images as { title, url }}
 			<a href={url} target="_blank"

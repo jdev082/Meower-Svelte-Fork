@@ -194,8 +194,13 @@
 		--orange-button: #10b981;
 		--orange-dark: #10b981;
 		--orange-scrollbar-back: white;
+		--orange-light: #59cea8;
 		--background: lightgray;
 		--foreground-orange: #047857;
+	}
+	#main.theme-default.mode-dark {
+		--background: black;
+		--foreground: white;
 	}
 	#main.theme-blue {
 		/*--orange: #aa0000;
