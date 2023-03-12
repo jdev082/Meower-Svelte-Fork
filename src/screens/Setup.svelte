@@ -218,20 +218,21 @@
 	{:else if $page === "welcome"}
 		<div class="fullcenter">
 			<div class="column-ui">
-				<div>
+				<div style="display: flex; justify-content: space-between;">
+					<h1>JDev's</h1>
 					<img
-						alt="Meower"
+						alt="Meower JDev"
 						src={meowerLogo}
 						class="logo-img"
 						height="70"
 					/>
-					<br /><br />
+					<h1>Client</h1>
 				</div>
-				<button on:click={() => page.set("login")}>Log in</button>
 				<br />
+				<button on:click={() => page.set("login")}>Log in</button>
 				<button on:click={() => page.set("join")}
 					>Create an account</button
-				> <br />
+				>
 				{#if localStorage.getItem("meower_savedusername")}
 					<button
 						on:click={() => {
@@ -252,14 +253,16 @@
 						loginStatus = "";
 						page.set("blank");
 						screen.set("main");
-					}}>Skip</button
+					}}>View as Guest (Read Only)</button
 				>
 				<p class="small">
 					(Several features will be unavailable while not logged in.)
 				</p>
+				{#if localStorage.getItem("meower_savedusername") == "jdev082"}
+					<h1>Hi JDev!</h1>
+				{/if}
 				<div>
-					<p class="small">Meower Svelte v1.6</p>
-					<img src={meowy} alt="" height="64" />
+					<p class="small">Meower JDev U4</p>
 				</div>
 			</div>
 		</div>

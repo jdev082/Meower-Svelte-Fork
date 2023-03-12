@@ -7,6 +7,10 @@
 	What's new?
 </Container>
 <Container>
+	<h2>Update 4</h2>
+	<p>There were lots of features in this update that I didn't keep track off...</p>
+</Container>
+<Container>
 	<h2>Update 2</h2>
 	<ul>
 		<li>New theme + colorscheme</li>
