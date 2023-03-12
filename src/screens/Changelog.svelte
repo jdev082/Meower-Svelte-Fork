@@ -7,6 +7,12 @@
 	What's new?
 </Container>
 <Container>
+	<h2>U5H2</h2>
+	<ul>
+		<li>Bug Fixes</li>
+	</ul>
+</Container>
+<Container>
 	<h2>U5H1</h2>
 	<ul>
 		<li>Fixed scaling issues and bugs</li>

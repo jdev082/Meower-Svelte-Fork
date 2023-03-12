@@ -37,5 +37,8 @@ ISO: ${_date.toISOString()}`;
 		bottom: 0;
 		right: 0;
 		margin: 4pt;
+		padding: 2pt;
+		background: var(--orange);
+		color: var(--foreground);
 	}
 </style>
