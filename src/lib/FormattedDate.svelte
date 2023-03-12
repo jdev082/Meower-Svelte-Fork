@@ -33,6 +33,11 @@ ISO: ${_date.toISOString()}`;
 	.date {
 		font-style: italic;
 		cursor: help;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		margin: 4pt;
+		padding: 2pt;
 		background: var(--orange);
 		color: var(--foreground);
 	}
