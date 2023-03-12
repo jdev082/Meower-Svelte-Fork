@@ -7,6 +7,12 @@
 	What's new?
 </Container>
 <Container>
+	<h2>U5H1</h2>
+	<ul>
+		<li>Fixed scaling issues and bugs</li>
+	</ul>
+</Container>
+<Container>
 	<h2>Update 5</h2>
 	<ul>
 		<li>Added 3 themes: red, magenta, and orange.</li>

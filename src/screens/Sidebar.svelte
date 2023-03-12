@@ -1,5 +1,6 @@
 <!-- RIP -->
 <script>
+	import {version} from '../lib/version.js'
 	import {
 		mainPage as page,
 		user,
@@ -15,7 +16,6 @@
 	import {tick} from "svelte";
 	import {fade} from "svelte/transition";
 
-	import logo from "../assets/logo.svg";
 	import home from "../assets/home.svg";
 	import gc from "../assets/chat.svg";
 	import mail from "../assets/mail.svg";
@@ -65,21 +65,22 @@
 <div class="sidebar" in:fade={{duration: 800}}>
 	<div class="logo">
 		<button class="logo-inner" on:click={() => goto("home")}>
-			<img
+			<!--<img
 				alt="Meower"
 				src={logo}
 				draggable={false}
 				height="100%"
 				width="auto"
-			/>
+			/>-->
+			<h1 style="margin: 2pt;" draggable={false}>JDev Meower Svelte {version}</h1>
 		</button>
 	</div>
-	<button on:click={() => goto("home")} class="home-btn round">
+	<button on:click={() => goto("home")} class="home-btn">
 		<img src={home} alt="Home" draggable={false} />
 	</button>
 	<button
 		on:click={() => goto("inbox")}
-		class="round"
+		class=""
 		class:new-msgs={$user.unread_inbox}
 	>
 		<img src={mail} alt="Inbox Messages" draggable={false} />
@@ -92,11 +93,11 @@
 				goto("chatlist");
 			}
 		}}
-		class="gc-btn round"
+		class="gc-btn "
 	>
 		<img src={gc} alt="Group Chats" draggable={false} />
 	</button>
-	<button on:click={() => goto("search")} class="search-btn round">
+	<button on:click={() => goto("search")} class="search-btn ">
 		<img
 			src={search}
 			alt="search"
@@ -105,7 +106,7 @@
 			draggable={false}
 		/>
 	</button>
-	<button on:click={() => goto("changelog")} class="changelog-btn round">
+	<button on:click={() => goto("changelog")} class="changelog-btn ">
 		<img
 			src={changelog}
 			alt="changelog"
@@ -119,11 +120,11 @@
 			$profileClicked = $user.name;
 			goto("profile");
 		}}
-		class="profile-btn round"
+		class="profile-btn "
 	>
 		<img src={profile} alt="Profile" draggable={false} />
 	</button>
-	<button on:click={() => goto("settings")} class="settings-btn round">
+	<button on:click={() => goto("settings")} class="settings-btn ">
 		<img src={settings} alt="Settings" draggable={false} />
 	</button>
 </div>
@@ -136,7 +137,7 @@
 	}
 
 	.sidebar {
-		background-color: var(--orange);
+		backg-color: var(--orange);
 
 		display: flex;
 		align-items: center;
@@ -182,7 +183,7 @@
 	.logo-inner {
 		display: inline-block;
 		height: 100%;
-		background: none;
+		backg: none;
 		border: none;
 		padding: 0;
 		margin: 0;
@@ -199,12 +200,12 @@
 		right: 0.5em;
 		top: 0.5em;
 
-		background: var(--foreground-orange);
+		backg: var(--foreg-orange);
 	}
 
 	:global(main.input-hover) .logo-inner:hover,
 	:global(main.input-touch) .logo-inner:active {
-		background-color: var(--orange-dark);
+		backg-color: var(--orange-dark);
 	}
 
 	:global(main.layout-old) .sidebar {

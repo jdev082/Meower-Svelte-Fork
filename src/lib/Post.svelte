@@ -21,6 +21,8 @@
 	import {default as loadProfile, profileCache} from "../lib/loadProfile.js";
 
 	import {onMount} from "svelte";
+	import Login from "./modals/Login.svelte";
+	import Logout from "./modals/Logout.svelte";
 
 	export let post = {};
 	export let buttons = true;
@@ -199,7 +201,7 @@
 		<div class="creatordate">
 			<div class="creator">
 				<b>
-					{post.user} @ <FormattedDate date={post.date} />
+					{post.user}
 				</b>
 				<div style="display: flex; justify-content: space-between;">
 				{#if bridged}
@@ -222,10 +224,18 @@
 						title="This person is a duck confirmed!"
 					/>
 				{/if}
+				{#if post.user.level > 0 }
+					<Badge
+						text={post.user.level}
+						title="This user has perm level {post.user.level}"
+					>
+					</Badge>
+				{/if}
 			</div>
 		</div>
 	</div>
-	<p class="post-content">{post.content}</p>
+	<p class="post-content">{post.content}
+	</p>
 	</div>
 	<div class="post-images">
 		{#each images as { title, url }}
@@ -239,6 +249,7 @@
 			>
 		{/each}
 	</div>
+	<FormattedDate date={post.date}/>
 </Container>
 
 <style>
