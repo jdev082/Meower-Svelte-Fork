@@ -44,6 +44,8 @@
 	class:theme-orange={$user.theme === "orange"}
 	class:theme-blue={$user.theme === "blue"}
 	class:theme-default={$user.theme === "default"}
+	class:theme-magenta={$user.theme === "magenta"}
+	class:theme-red={$user.theme === "red"}
 	class:mode-light={!($user.mode === false)}
 	class:mode-dark={$user.mode === false}
 	class:layout-old={$user.layout === "old"}
@@ -201,6 +203,28 @@
 	#main.theme-default.mode-dark {
 		--background: black;
 		--foreground: white;
+	}
+	#main.theme-magenta {
+		--orange: #df3cd9 !important;
+		--orange-light: #f879ff !important;
+		--orange-dark: #e236eb !important;
+		--orange-button: var(--orange);
+		--orange-scrollbar-back: #ab37b1 !important;
+	}
+	#main.theme-magenta.mode-dark {
+		--background: black;
+		--foreground: white;
+	}
+	#main.theme-red.mode-dark {
+		--background: black;
+		--foreground: white;
+	}
+	#main.theme-red {
+    --orange: #ff4d4d !IMPORTANT;
+    --orange-light: #ff7979 !IMPORTANT;
+    --orange-dark: #eb3636 !IMPORTANT;
+    --orange-button: var(--orange);
+    --orange-scrollbar-back: #b13737 !IMPORTANT;
 	}
 	#main.theme-blue {
 		/*--orange: #aa0000;

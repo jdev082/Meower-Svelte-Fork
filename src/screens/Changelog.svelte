@@ -7,6 +7,13 @@
 	What's new?
 </Container>
 <Container>
+	<h2>Update 5</h2>
+	<ul>
+		<li>Added 3 themes: red, magenta, and orange.</li>
+		<li>Bug Fixes</li>
+	</ul>
+</Container>
+<Container>
 	<h2>Update 4</h2>
 	<p>There were lots of features in this update that I didn't keep track off...</p>
 </Container>

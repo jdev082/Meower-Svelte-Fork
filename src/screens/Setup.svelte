@@ -1,5 +1,6 @@
 <!-- Boring orange screen with login and signup. -->
 <script>
+	import {version} from "../lib/version.js"
 	import {
 		screen,
 		setupPage as page,
@@ -262,7 +263,7 @@
 					<h1>Hi JDev!</h1>
 				{/if}
 				<div>
-					<p class="small">Meower JDev U4</p>
+					<p class="small">Meower JDev {version}</p>
 				</div>
 			</div>
 		</div>
