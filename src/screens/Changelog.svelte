@@ -7,6 +7,12 @@
 	What's new?
 </Container>
 <Container>
+	<h2>U6</h2>
+	<ul>
+		<li>Funny button hover animations</li>
+	</ul>
+</Container>
+<Container>
 	<h2>U5H2</h2>
 	<ul>
 		<li>Bug Fixes</li>

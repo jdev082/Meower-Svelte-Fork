@@ -80,7 +80,7 @@
 	</button>
 	<button
 		on:click={() => goto("inbox")}
-		class="inbox-btn round"
+		class="inbox-btn anim"
 		class:new-msgs={$user.unread_inbox}
 	>
 		<img src={mail} alt="Inbox Messages" draggable={false} />
@@ -93,11 +93,11 @@
 				goto("chatlist");
 			}
 		}}
-		class="gc-btn "
+		class="gc-btn anim"
 	>
 		<img src={gc} alt="Group Chats" draggable={false} />
 	</button>
-	<button on:click={() => goto("search")} class="search-btn ">
+	<button on:click={() => goto("search")} class="anim search-btn ">
 		<img
 			src={search}
 			alt="search"
@@ -106,7 +106,7 @@
 			draggable={false}
 		/>
 	</button>
-	<button on:click={() => goto("changelog")} class="changelog-btn ">
+	<button on:click={() => goto("changelog")} class="changelog-btn anim">
 		<img
 			src={changelog}
 			alt="changelog"
@@ -120,11 +120,11 @@
 			$profileClicked = $user.name;
 			goto("profile");
 		}}
-		class="profile-btn "
+		class="profile-btn anim"
 	>
 		<img src={profile} alt="Profile" draggable={false} />
 	</button>
-	<button on:click={() => goto("settings")} class="settings-btn ">
+	<button on:click={() => goto("settings")} class="settings-btn anim">
 		<img src={settings} alt="Settings" draggable={false} />
 	</button>
 </div>
@@ -229,7 +229,7 @@
 	}
 
 	@media screen and (prefers-reduced-motion: no-preference) {
-		.round > img {
+		.anim > img {
 			transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 		}
 
