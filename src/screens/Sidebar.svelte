@@ -80,7 +80,7 @@
 	</button>
 	<button
 		on:click={() => goto("inbox")}
-		class=""
+		class="inbox-btn round"
 		class:new-msgs={$user.unread_inbox}
 	>
 		<img src={mail} alt="Inbox Messages" draggable={false} />
@@ -223,4 +223,40 @@
 		padding: 0;
 		gap: 0.25em;
 	}
+
+	.round {
+		overflow: hidden;
+	}
+
+	@media screen and (prefers-reduced-motion: no-preference) {
+		.round > img {
+			transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+		}
+
+		.home-btn:hover > img {
+			transform: rotateY(180deg) rotateX(360deg) scale(1.1);
+		}
+		.inbox-btn:hover > img {
+			transform: perspective(2em) rotateX(360deg) scale(1.1);
+		}
+		.gc-btn:hover > img {
+			transform: skewY(175deg) scale(1.1);
+		}
+		.search-btn:hover > img {
+			transform: rotate(360deg)  scale(1.1);
+		}
+		.changelog-btn:hover > img {
+			transform: perspective(2em) rotateY(180deg) scale(1.1);
+		}
+		.settings-btn:hover > img {
+			transform: rotate(360deg) scale(1.1);
+		}
+		.profile-btn:hover > img {
+			transform: rotate(360deg) scale(1.1);
+		}
+		.logout-btn:hover > img {
+			transform: perspective(2em) rotateY(380deg) scale(1.1);
+		}
+	}
+
 </style>
