@@ -72,7 +72,7 @@
 				height="100%"
 				width="auto"
 			/>-->
-			<h1 style="margin: 2pt;" draggable={false}>JDev Meower Svelte {version}</h1>
+			<h1 id="branding" style="margin: 2pt;" draggable={false}>JDev Meower Svelte {version}</h1>
 		</button>
 	</div>
 	<button on:click={() => goto("home")} class="home-btn">
@@ -159,6 +159,8 @@
 		min-width: 0;
 		min-height: 0;
 
+		overflow: hidden;
+
 		margin: 2pt;
 		flex-shrink: 1;
 
@@ -224,9 +226,6 @@
 		gap: 0.25em;
 	}
 
-	.round {
-		overflow: hidden;
-	}
 
 	@media screen and (prefers-reduced-motion: no-preference) {
 		.anim > img {
@@ -254,8 +253,8 @@
 		.profile-btn:hover > img {
 			transform: rotate(360deg) scale(1.1);
 		}
-		.logout-btn:hover > img {
-			transform: perspective(2em) rotateY(380deg) scale(1.1);
+		.logo:hover > h1 {
+			transform: rotate(360deg) scale(1.1);
 		}
 	}
 
