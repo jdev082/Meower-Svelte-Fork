@@ -7,6 +7,15 @@
 	What's new?
 </Container>
 <Container>
+	<h2>U7</h2>
+	<ul>
+		<li>Various bug fixes</li>
+		<li>Custom scrollbar</li>
+		<li>Updated legal information</li>
+		<li>New logo</li>
+	</ul>
+</Container>
+<Container>
 	<h2>U6H1</h2>
 	<ul>
 		<li>Fixed funny button hover animations</li>

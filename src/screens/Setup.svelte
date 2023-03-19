@@ -17,7 +17,6 @@
 	import unloadedProfile from "../lib/unloadedprofile.js";
 
 	import meowerLogo from "../assets/logo.svg";
-	import meowy from "../assets/meowy.svg";
 
 	import {tick, onMount} from "svelte";
 	import {fade} from "svelte/transition";
@@ -220,14 +219,13 @@
 		<div class="fullcenter">
 			<div class="column-ui">
 				<div style="display: flex; justify-content: space-between;">
-					<h1>JDev's</h1>
 					<img
 						alt="Meower JDev"
 						src={meowerLogo}
 						class="logo-img"
 						height="70"
+						style="margin: 0 auto;"
 					/>
-					<h1>Client</h1>
 				</div>
 				<br />
 				<button on:click={() => page.set("login")}>Log in</button>

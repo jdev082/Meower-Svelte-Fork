@@ -1,6 +1,5 @@
 <!-- RIP -->
 <script>
-	import {version} from '../lib/version.js'
 	import {
 		mainPage as page,
 		user,
@@ -15,6 +14,8 @@
 
 	import {tick} from "svelte";
 	import {fade} from "svelte/transition";
+
+	import logo from "../assets/logo.svg";
 
 	import home from "../assets/home.svg";
 	import gc from "../assets/chat.svg";
@@ -65,14 +66,14 @@
 <div class="sidebar" in:fade={{duration: 800}}>
 	<div class="logo">
 		<button class="logo-inner" on:click={() => goto("home")}>
-			<!--<img
+			<img
 				alt="Meower"
 				src={logo}
 				draggable={false}
 				height="100%"
 				width="auto"
-			/>-->
-			<h1 id="branding" style="margin: 2pt;" draggable={false}>JDev Meower Svelte {version}</h1>
+			/>
+			<!--<h1 id="branding" style="margin: 2pt;" draggable={false}>JDev Meower Svelte {version}</h1>-->
 		</button>
 	</div>
 	<button on:click={() => goto("home")} class="home-btn">

@@ -146,4 +146,22 @@
 	:global(main.layout-old) .view {
 		--view-height: calc(100vh - 3.5em - 0.66em);
 	}
+
+	::-webkit-scrollbar {
+  		width: 20px;
+	}
+
+	::-webkit-scrollbar-track {
+		border-radius: 10px;
+		margin: 8pt;
+	}
+ 
+	::-webkit-scrollbar-thumb {
+		background: var(--orange); 
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--orange-light);
+	}
 </style>
