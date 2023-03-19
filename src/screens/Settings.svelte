@@ -60,7 +60,11 @@
 			class="circle settings"
 			on:click={() => {
 				const _user = $user;
-				_user.theme = themes[((themes.indexOf(_user.theme) ?? -1) + 1) % themes.length]
+				_user.theme =
+					themes[
+						((themes.indexOf(_user.theme) ?? -1) + 1) %
+							themes.length
+					];
 				user.set(_user);
 
 				clm.updateProfile();
@@ -160,11 +164,13 @@
 	</Container>
 {/if}
 <Container>
-<h2>Legal</h2>
-Meowy and other assets rightfully owned by <strong>Meower Media Co</strong> are licensed under the <strong>CC BY-NC-SA 4.0</strong>
-license.
-<br />
-The Meower name is also owned by <strong>Meower Media Co</strong> and is licensed under the <strong>CC BY-NC-ND 4.0</strong>
+	<h2>Legal</h2>
+	Meowy and other assets rightfully owned by<strong>Meower Media Co</strong>
+	are licensed under the <strong>CC BY-NC-SA 4.0</strong>
+	license.
+	<br />
+	The Meower name is also owned by <strong>Meower Media Co</strong> and is
+	licensed under the <strong>CC BY-NC-ND 4.0</strong>
 </Container>
 
 <!--

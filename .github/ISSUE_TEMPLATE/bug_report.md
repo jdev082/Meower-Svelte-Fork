@@ -1,10 +1,9 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: '[branch | version] Summary'
-labels: ''
-assignees: ''
-
+title: "[branch | version] Summary"
+labels: ""
+assignees: ""
 ---
 
 <!-- MEOWER CLIENT BUG REPORT INSTRUCTIONS
@@ -30,15 +29,19 @@ Please note the following:
 -->
 
 ## Expected behavior
+
 <!-- Please provide a clear and concise description of what you expected to happen. -->
 
 ## Current behavior
+
 <!-- Please provide a clear and concise description of the bug/what actually happens. -->
 
 ## Possible solution
+
 <!-- Not required, but if you have a suggestion on how to fix the bug, please provide below. -->
 
 ## Steps to reproduce
+
 <!-- Please provide us with any of the following:
 
 1. A recording of a live example of the bug, or
@@ -46,23 +49,31 @@ Please note the following:
 3. If applicable, provide any code needed to reproduce. -->
 
 ## Screenshots / Logs
+
 <!-- If applicable, add screenshots or paste any logging info to help explain your problem. -->
 
 ## Platform info
+
 <!-- Please provide version info of the software you are using. -->
+
 **Meower Client**
-- Meower Client Version + Build Date: 
+
+-   Meower Client Version + Build Date:
 
 <!-- Please fill out this section below.-->
+
 **Desktop/Mobile Device**
- - OS: [Examples: Windows, Linux, macOS...]
- - Version: [Examples: 22H2, 22.04, 13.7...]
- - RAM: [Examples: 8GB, 16GB, 32GB...]
- - Storage: [Examples: 128GB, 256GB...]
- - CPU Architecture: [Examples: x86, x86_64, PPC, ARM32, ARM64...]
- 
+
+-   OS: [Examples: Windows, Linux, macOS...]
+-   Version: [Examples: 22H2, 22.04, 13.7...]
+-   RAM: [Examples: 8GB, 16GB, 32GB...]
+-   Storage: [Examples: 128GB, 256GB...]
+-   CPU Architecture: [Examples: x86, x86_64, PPC, ARM32, ARM64...]
+
 ## Did I read the instructions before making this bug report?
+
 <!-- Replace the following line with "I have read the instructions" -->
+
 **I have NOT read the instructions.**
 
 <!-- Credits to the LineageOS team for their bug report template! -->

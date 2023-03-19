@@ -227,7 +227,6 @@
 		gap: 0.25em;
 	}
 
-
 	@media screen and (prefers-reduced-motion: no-preference) {
 		.anim > img {
 			transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
@@ -243,7 +242,7 @@
 			transform: skewY(175deg) scale(1.1);
 		}
 		.search-btn:hover > img {
-			transform: rotate(360deg)  scale(1.1);
+			transform: rotate(360deg) scale(1.1);
 		}
 		.changelog-btn:hover > img {
 			transform: perspective(2em) rotateY(180deg) scale(1.1);
@@ -258,5 +257,4 @@
 			transform: rotate(360deg) scale(1.1);
 		}
 	}
-
 </style>

@@ -7,6 +7,12 @@
 	What's new?
 </Container>
 <Container>
+	<h2>Beta</h2>
+	<ul>
+		<li>Individual changes are not shown for betas.
+	</ul>
+</Container>
+<Container>
 	<h2>U7</h2>
 	<ul>
 		<li>Various bug fixes</li>
@@ -48,7 +54,10 @@
 </Container>
 <Container>
 	<h2>Update 4</h2>
-	<p>There were lots of features in this update that I didn't keep track off...</p>
+	<p>
+		There were lots of features in this update that I didn't keep track
+		off...
+	</p>
 </Container>
 <Container>
 	<h2>Update 2</h2>
@@ -70,9 +79,12 @@
 	<ul>
 		<li>Changing your password now also logs you out of every device</li>
 		<li>Fixed misspelling error within Update Quote</li>
-		<li>Add https://forums.meower.org/ and https://nextcloud.meower.org/ to the image host whitelist</li>
+		<li>
+			Add https://forums.meower.org/ and https://nextcloud.meower.org/ to
+			the image host whitelist
+		</li>
 	</ul>
-	</Container>
+</Container>
 <Container>
 	<h2>1.5.2</h2>
 	<ul>
@@ -82,7 +94,10 @@
 <Container>
 	<h2>1.5.1</h2>
 	<ul>
-		<li>Fix the dango profile picture appearing twice when you have it selected</li>
+		<li>
+			Fix the dango profile picture appearing twice when you have it
+			selected
+		</li>
 	</ul>
 </Container>
 <Container>
@@ -116,9 +131,12 @@
 		<summary>Betas</summary>
 		<h3>Hotfix</h3>
 		<ul>
-			<li>Disable bot badges (they aren't officially supported, and the CL4 port will add them)</li>
+			<li>
+				Disable bot badges (they aren't officially supported, and the
+				CL4 port will add them)
+			</li>
 		</ul>
-		
+
 		<h3>Release</h3>
 		<ul>
 			<li>Banned status</li>

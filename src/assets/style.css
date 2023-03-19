@@ -265,8 +265,8 @@ a {
 }
 
 hr {
-    height: 2px;
-    color: var(--orange);
-    background-color: var(--orange);
-    border: none;
+	height: 2px;
+	color: var(--orange);
+	background-color: var(--orange);
+	border: none;
 }

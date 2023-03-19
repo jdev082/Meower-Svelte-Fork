@@ -1,6 +1,6 @@
 <!-- Boring orange screen with login and signup. -->
 <script>
-	import {version} from "../lib/version.js"
+	import {version} from "../lib/version.js";
 	import {
 		screen,
 		setupPage as page,

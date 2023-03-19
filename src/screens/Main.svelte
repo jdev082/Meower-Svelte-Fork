@@ -148,16 +148,16 @@
 	}
 
 	::-webkit-scrollbar {
-  		width: 20px;
+		width: 20px;
 	}
 
 	::-webkit-scrollbar-track {
 		border-radius: 10px;
 		margin: 8pt;
 	}
- 
+
 	::-webkit-scrollbar-thumb {
-		background: var(--orange); 
+		background: var(--orange);
 		border-radius: 10px;
 	}
 

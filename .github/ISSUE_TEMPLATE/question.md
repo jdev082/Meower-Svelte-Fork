@@ -1,10 +1,9 @@
 ---
 name: Question
 about: Ask a question and get support
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **Is your question related to a problem? Please describe.**

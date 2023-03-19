@@ -220,16 +220,6 @@
 			<Container>
 				<h1>{$chatName}</h1>
 				Chat ID: {$chatid}
-				{#if $chatid !== "livechat"}
-					<div class="settings-controls">
-						<button
-							class="circle members"
-							on:click={() => {
-								showMembers = !showMembers;
-							}}
-						/>
-					</div>
-				{/if}
 			</Container>
 			{#if $user.name}
 				<form
@@ -348,6 +338,16 @@
 				</div>
 			{/if}
 		</div>
+		{#if $chatid !== "livechat"}
+			<div class="show-members-btn">
+				<button
+					class="circle members"
+					on:click={() => {
+						showMembers = !showMembers;
+					}}
+				/>
+			</div>
+		{/if}
 		{#if showMembers && $chatid !== "livechat"}
 			<div id="members">
 				<div id="members-inner">
@@ -428,7 +428,7 @@
 	}
 	#members {
 		height: var(--view-height);
-		width: min(45%, 12em);
+		width: 100%;
 
 		background-color: var(--background);
 		border: solid 2px var(--orange);
@@ -446,7 +446,7 @@
 		overflow-y: auto;
 		overflow-x: hidden;
 		height: calc(100% - 2.25em);
-		margin-top: 2.25em;
+		margin-top: 2.5em;
 	}
 
 	.createpost {
@@ -501,9 +501,14 @@
 	}
 	.members-title {
 		margin: 0.25em;
+		margin-top: 1em;
 	}
 
 	.small {
 		font-size: 75%;
+	}
+	.show-members-btn {
+		position: absolute;
+		z-index: 1;
 	}
 </style>

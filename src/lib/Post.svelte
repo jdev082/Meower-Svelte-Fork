@@ -79,7 +79,10 @@
 		if (!post.user) return;
 
 		if (post.content.includes(":")) {
-			bridged = (post.user === "Discord") || (post.user === "revolt") || (post.user === "Revower");
+			bridged =
+				post.user === "Discord" ||
+				post.user === "revolt" ||
+				post.user === "Revower";
 			webhook = post.user == "Webhooks";
 		}
 
@@ -96,15 +99,20 @@
 		images = [];
 		while (true) {
 			const result = iterator.next();
-			if (result.done) break
-			
+			if (result.done) break;
+
 			try {
 				new URL(result.value[2]);
 			} catch (e) {
 				continue;
-			};
-			
-			if (!IMAGE_HOST_WHITELIST.some(o => result.value[2].toLowerCase().startsWith(o.toLowerCase()))) return;
+			}
+
+			if (
+				!IMAGE_HOST_WHITELIST.some(o =>
+					result.value[2].toLowerCase().startsWith(o.toLowerCase())
+				)
+			)
+				return;
 
 			images.push({
 				title: result.value[1],
@@ -204,38 +212,36 @@
 					{post.user}
 				</b>
 				<div style="display: flex; justify-content: space-between;">
-				{#if bridged}
-					<Badge
-						text="BRIDGED"
-						title="This post is bridged from an external service by a bot"
-					/>
-				{/if}
+					{#if bridged}
+						<Badge
+							text="BRIDGED"
+							title="This post is bridged from an external service by a bot"
+						/>
+					{/if}
 
-				{#if webhook}
-					<Badge
-						text="WEBHOOK"
-						title="This post was posted by the @Webhooks bot. The username may not mean the user actually posted it!"
-					/>
-				{/if}
+					{#if webhook}
+						<Badge
+							text="WEBHOOK"
+							title="This post was posted by the @Webhooks bot. The username may not mean the user actually posted it!"
+						/>
+					{/if}
 
-				{#if post.user == "MikeDEV"}
-					<Badge
-						text="Duck"
-						title="This person is a duck confirmed!"
-					/>
-				{/if}
-				{#if post.user.level > 0 }
-					<Badge
-						text={post.user.level}
-						title="This user has perm level {post.user.level}"
-					>
-					</Badge>
-				{/if}
+					{#if post.user == "MikeDEV"}
+						<Badge
+							text="Duck"
+							title="This person is a duck confirmed!"
+						/>
+					{/if}
+					{#if post.user.level > 0}
+						<Badge
+							text={post.user.level}
+							title="This user has perm level {post.user.level}"
+						/>
+					{/if}
+				</div>
 			</div>
 		</div>
-	</div>
-	<p class="post-content">{post.content}
-	</p>
+		<p class="post-content">{post.content}</p>
 	</div>
 	<div class="post-images">
 		{#each images as { title, url }}
@@ -249,7 +255,8 @@
 			>
 		{/each}
 	</div>
-	<FormattedDate date={post.date}/>
+	<br />
+	<FormattedDate date={post.date} />
 </Container>
 
 <style>

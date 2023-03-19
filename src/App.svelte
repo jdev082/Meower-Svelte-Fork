@@ -21,6 +21,7 @@
 	import ErrorModal from "./lib/modals/Error.svelte";
 	import ModerateUserInputModal from "./modpanel/ModerateUserInput.svelte";
 	import LogoutModal from "./lib/modals/Logout.svelte";
+	import ClientRemind from "./lib/modals/ClientRemind.svelte";
 
 	import Spinner from "./lib/Spinner.svelte";
 	import {link} from "./lib/clmanager.js";
@@ -131,6 +132,9 @@
 			<AddMemberModal />
 		{:else if $modalPage === "removeMember"}
 			<RemoveMemberModal />
+			<!-- meower media pls dont sue me -->
+		{:else if $modalPage == "ClientRemind"}
+			<ClientRemind />
 		{:else}
 			<ErrorModal />
 		{/if}
@@ -220,11 +224,11 @@
 		--foreground: white;
 	}
 	#main.theme-red {
-    --orange: #ff4d4d !IMPORTANT;
-    --orange-light: #ff7979 !IMPORTANT;
-    --orange-dark: #eb3636 !IMPORTANT;
-    --orange-button: var(--orange);
-    --orange-scrollbar-back: #b13737 !IMPORTANT;
+		--orange: #ff4d4d !important;
+		--orange-light: #ff7979 !important;
+		--orange-dark: #eb3636 !important;
+		--orange-button: var(--orange);
+		--orange-scrollbar-back: #b13737 !important;
 	}
 	#main.theme-blue {
 		/*--orange: #aa0000;
