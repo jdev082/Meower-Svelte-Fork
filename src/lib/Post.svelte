@@ -207,6 +207,7 @@
 			/>
 		</button>
 		<div class="creatordate">
+			<br />
 			<div class="creator">
 				<b>
 					{post.user}
@@ -316,5 +317,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.25em;
+	}
+	br {
+		display: none;
+	}
+	@media only screen and (max-width: 675px) {
+		br {
+			display: block;
+		}
 	}
 </style>
